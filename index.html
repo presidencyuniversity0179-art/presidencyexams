@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Presidency Exams</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f2f2f2;
+text-align:center;
+}
+
+.box{
+margin-top:100px;
+background:white;
+padding:30px;
+width:300px;
+margin-left:auto;
+margin-right:auto;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+input{
+width:90%;
+padding:10px;
+margin:10px;
+}
+
+button{
+padding:10px 20px;
+background:#007bff;
+color:white;
+border:none;
+}
+
+</style>
+
+<script>
+
+function login(){
+
+var roll=document.getElementById("roll").value;
+var pass=document.getElementById("pass").value;
+
+if(roll=="20231CSE0179" && pass=="21-01-2006"){
+window.location="dashboard.html";
+}
+
+else{
+alert("Wrong Login");
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Presidency University</h2>
+<h3>Examination Department</h3>
+
+<input id="roll" placeholder="Roll Number">
+
+<input id="pass" type="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+</div>
+
+</body>
+</html>
